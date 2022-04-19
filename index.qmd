@@ -182,32 +182,43 @@ TO DO!
 
 ::: panel-tabset
 ## New File
-<center>![](img/rstudio-newfile.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}</center>
 
+<center>
 
+![](img/rstudio-newfile.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}
+
+</center>
 
 ## New Project
 
-<center>![](img/rstudio-newproject.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}</center>
+<center>
+
+![](img/rstudio-newproject.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}
+
+</center>
 
 ## Create Quarto Project
 
-<center>![](img/rstudio-create-quarto-project.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}</center>
+<center>
+
+![](img/rstudio-create-quarto-project.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}
+
+</center>
 
 ## Projeto Quarto criado
 
-<center>![](img/rstudio-quarto-project-created.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}</center>
+<center>
+
+![](img/rstudio-quarto-project-created.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}
+
+</center>
 :::
-
-
 
 ## Quarto no terminal
 
 Você também pode usar o terminal para utilizar o Quarto.
 
 ::: panel-tabset
-
-
 ## Ver comandos disponíveis
 
 ``` bash
@@ -239,7 +250,6 @@ quarto help
         inspect         [path]             - Inspect a Quarto project or input path. Inspecting a project returns its config and engines.   
         tools           [command] [tool]   - Manage the installation, update, and uninstallation of useful tools.                           
         help            [command]          - Show this help or the help of a sub-command.    
-
 
 ## Criar um projeto
 
@@ -275,10 +285,7 @@ quarto render
       link-citations: true
       lang: en
       title: exemplo-quarto-project
-
-::: 
-
-
+:::
 
 ## Quarto no VS Code
 
@@ -286,13 +293,7 @@ quarto render
 ## TO DO
 
 TO DO!
-
-
 :::
-
-
-
-
 
 ## Dicas para acompanhar as novidades {.center}
 
@@ -308,7 +309,8 @@ TO DO!
 
 -   O plano é lançar o Quarto versão 1.0 na rstudio::conf [#463](https://github.com/quarto-dev/quarto-cli/discussions/463#discussioncomment-2437882)
 
--   Edição colaborativa online? [#405](https://github.com/quarto-dev/quarto-cli/discussions/405)
+-   Edição colaborativa online?
+    [#405](https://github.com/quarto-dev/quarto-cli/discussions/405)
 
 ## Materiais para ir mais longe {.center}
 
