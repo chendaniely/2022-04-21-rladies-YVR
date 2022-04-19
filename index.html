@@ -3,8 +3,8 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.276">
 
-  <meta name="author" content="Beatriz Milz no VI SER   International Seminar on Statistics with R">
-  <title>Quarto:</title>
+  <meta name="author" content="Daniel Chen">
+  <title>Identify and Create Data Science Materials for your Learners</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -17,69 +17,6 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      {   }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-    code span.at { color: #7d9029; } /* Attribute */
-    code span.bn { color: #40a070; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #4070a0; } /* Char */
-    code span.cn { color: #880000; } /* Constant */
-    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-    code span.dt { color: #902000; } /* DataType */
-    code span.dv { color: #40a070; } /* DecVal */
-    code span.er { color: #ff0000; font-weight: bold; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #40a070; } /* Float */
-    code span.fu { color: #06287e; } /* Function */
-    code span.im { } /* Import */
-    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-    code span.op { color: #666666; } /* Operator */
-    code span.ot { color: #007020; } /* Other */
-    code span.pp { color: #bc7a00; } /* Preprocessor */
-    code span.sc { color: #4070a0; } /* SpecialChar */
-    code span.ss { color: #bb6688; } /* SpecialString */
-    code span.st { color: #4070a0; } /* String */
-    code span.va { color: #19177c; } /* Variable */
-    code span.vs { color: #4070a0; } /* VerbatimString */
-    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
   <script src="index_files/libs/clipboard/clipboard.min.js"></script>
@@ -384,324 +321,232 @@
     <div class="slides">
 
 <section class="center">
-  <h1 class="title">Quarto:</h1>
-  <p class="subtitle">Conhecendo a evolução do R Markdown</p>
-  <p class="author"><a href="https://beatrizmilz.com">Beatriz Milz</a> no <a href="https://ser.uff.br">VI SER <br> International Seminar on Statistics with R</a></p>
-  <p class="date">Maio de 2022</p>
+  <h1 class="title">Identify and Create Data Science Materials for your Learners</h1>
+  <p class="subtitle">R-Ladies Vancouver</p>
+  <p class="author"><a href="https://daniel.rbind.io/">Daniel Chen</a></p>
+  <p class="date">Thursday, April 21, 2022</p>
 </section>
 
 <section class="slide level2 center">
-<h2>Beatriz Milz</h2>
+<h2>Daniel Chen</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
 <center>
-<p><a href="mailto:milz.bea@gmail.com"><i class="far fa-envelope"></i></a> <a href="https://twitter.com/BeaMilz"><i class="fab fa-twitter"></i> </a><a href="https://github.com/beatrizmilz"><i class="fab fa-github"></i></a> <a href="https://beatrizmilz.github.io/resume/index.pdf"><i class="ai ai-cv"></i></a></p>
-<p><img src="img/foto.jpeg" alt="Beatriz Milz" style="border-radius: 50%;     max-width: 70%;"></p>
+<p><a href="mailto:chendaniely@gmail.com"><i class="far fa-envelope"></i></a> <a href="https://twitter.com/chendaniely"><i class="fab fa-twitter"></i> </a><a href="https://github.com/chendaniely"><i class="fab fa-github"></i></a></p>
+<p><img src="img/foto.jpeg" alt="Daniel Chen" style="border-radius: 50%;     max-width: 70%;"></p>
 </center>
 </div><div class="column" style="width:60%;">
 <ul>
-<li class="fragment"><p>Professora na <a href="https://curso-r.com/">Curso-R</a>.</p></li>
-<li class="fragment"><p>Doutoranda em Ciência Ambiental (PROCAM/IEE/USP)</p></li>
-<li class="fragment"><p>Co-organizadora da <a href="https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo">R-Ladies São Paulo</a> 💜</p></li>
-<li class="fragment"><p><a href="https://education.rstudio.com/trainers/people/milz+beatriz/">Instrutora de tidyverse certificada pela RStudio</a>.</p></li>
+<li><p>Postdoctoral Research and Teaching Fellow, UBC, MDS-Vancouver</p></li>
+<li><p>Data Science Educator, RStudio, PBC (<a href="https://www.rstudio.com/academy/">RStudio Academy</a>)</p></li>
+<li><p>The Carpentries</p></li>
+<li><p>Author, <a href="https://www.pearson.com/us/higher-education/program/Chen-Pandas-for-Everyone-Python-Data-Analysis/PGM335102.html">Pandas for Everyone</a></p></li>
 </ul>
 </div>
 </div>
 </section>
 <section class="slide level2 center">
-<h2>Sobre essa apresentação</h2>
-<center>
-<p><img data-src="https://quarto.org/quarto.png" height="100"></p>
-</center>
-<ul>
-<li class="fragment"><p>❌ Tutorial sobre o Quarto</p></li>
-<li class="fragment"><p>✅ Minha experiência pessoal</p></li>
-<li class="fragment"><p>✅ Dicas sobre o que eu aprendi até então</p></li>
-</ul>
+<h2>Musqueam</h2>
+</section>
+<section class="slide level2 center">
+<h2>Tutelo</h2>
+</section>
+<section>
+<section class="title-slide slide level1 center">
+<h1>Data Science Education</h1>
+
 </section>
 <section class="slide level2">
-<h2>No começo…</h2>
-
-<img data-src="https://i.giphy.com/media/1i4UsfZhrhKkHagP5g/giphy.webp" style="width:60.0%" class="r-stretch quarto-figure-center"></section>
-<section class="slide level2 center">
-<h2>R Markdown</h2>
-<ul>
-<li class="fragment"><p><a href="https://rmarkdown.rstudio.com/">Pacote em R</a>, para criar documentos reprodutíveis.</p></li>
-<li class="fragment"><p>Muito usado na comunidade de R.</p></li>
-<li class="fragment"><p>Criado e mantido pela <a href="https://www.rstudio.com/">RStudio</a>.</p></li>
-</ul>
-</section>
-<section class="slide level2 center">
-<h2>R Markdown</h2>
-<ul>
-<li class="fragment">Possui extensões que permitem produzir:
-<ul>
-<li class="fragment">Sites</li>
-<li class="fragment">Blogs</li>
-<li class="fragment">Apresentações</li>
-<li class="fragment">Textos acadêmicos (artigos científicos, relatórios, teses, etc)</li>
-<li class="fragment">Entre outros!</li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2 center">
-<h2>Eu 💜 R Markdown</h2>
-<ul>
-<li class="fragment"><p>Uso desde 2018!</p></li>
-<li class="fragment"><p>Várias apresentações sobre R Markdown (especialmente apresentações com xaringan!): <a href="https://beatrizmilz.com/talk/" class="uri">https://beatrizmilz.com/talk/</a></p></li>
-<li class="fragment"><p>Gosto de acompanhar, testar as novidades e assistir palestras!</p></li>
-</ul>
-</section>
-<section class="slide level2 center">
-<h2></h2>
-<p>No 3º R Day (setembro/2021), o Yihui Xie (criador do R Markdown) participou e disse:</p>
-<blockquote>
-<p>” The future? We have learned a lot in the last 10 years from those packages in the R Markdown ecosystem. <strong>We are lauching a new, exciting and much bigger project.</strong> Stay tuned.”</p>
-</blockquote>
-<p>Assista a apresentação no <a href="https://youtu.be/T24nt-d4cEg?t=2616">Youtube</a>.</p>
-</section>
-<section class="slide level2 center">
-<h2><del>Stalkeando</del> Acompanhando</h2>
-<p>Encontrei uma nova organização no GitHub: <a href="https://github.com/quarto-dev">quarto-dev</a></p>
-<p>Algumas pessoas da RStudio estavam envolvidas no projeto</p>
-<p>Acompanhei e logo quis testar!</p>
-<center>
-<p><img data-src="https://media.giphy.com/media/fSCbSLfLmTxEKmlRcy/giphy.gif" width="500" height="250"></p>
-</center>
-</section>
-<section class="slide level2 center">
-<h2>Quarto</h2>
-<div class="columns">
-<div class="column" style="width:45%;">
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.gif" style="width:90.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<ul>
-<li class="fragment"><p>Comecei a usar o Quarto em outubro de 2021</p></li>
-<li class="fragment"><p><a href="https://github.com/quarto-dev/quarto-web/issues/38">Enviei uma sugestão</a> (outubro/2021)</p></li>
-<li class="fragment"><p><a href="https://github.com/quarto-dev/quarto-cli/pull/182">Enviei uma contribuição</a> (novembro/2021)</p></li>
-</ul>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-<h2>Porque o Quarto existe?</h2>
-<p>TO DO</p>
-</section>
-<section class="slide level2 center">
-<h2>Quais são as similaridades?</h2>
-<p>TO DO!</p>
-</section>
-<section class="slide level2 center">
-<h2>Quais são as (principais) diferenças?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3>R Markdown</h3>
-<p>TO DO!</p>
-</div><div class="column" style="width:50%;">
-<h3>Quarto</h3>
-<p>TO DO!</p>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-<h2>Como começar a usar o quarto</h2>
-<p><a href="https://quarto.org/docs/get-started/">Instalar o Quarto:</a></p>
-<p><br></p>
-
-<img data-src="img/install-quarto.png" style="width: 80%; !important" data-fig-align="center" alt="Print screen da página de instalação do Quarto" class="r-stretch"></section>
-<section class="slide level2 center">
-<h2>Como começar a usar o quarto</h2>
-<ul>
-<li class="fragment">Escolha uma IDE. Exemplos que experimentei:
-<ul>
-<li class="fragment"><a href="https://quarto.org/docs/get-started/hello/rstudio.html">RStudio</a> - Experimente o <a href="https://rstudio.github.io/visual-markdown-editing/">Visual Markdown Editor</a></li>
-<li class="fragment"><a href="https://quarto.org/docs/get-started/hello/vscode.html">Visual Studio code</a> - Instale também a <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">extensão do Quarto para VS Code</a></li>
-</ul></li>
-</ul>
-<p><br></p>
-
-<img data-src="img/step-2.png" style="width: 80%; !important" data-fig-align="center" alt="Print screen da página de instalação do Quarto" class="r-stretch"></section>
-<section class="slide level2">
-<h2>Quarto no RStudio</h2>
-<div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">New File</a></li><li><a href="#tabset-1-2">New Project</a></li><li><a href="#tabset-1-3">Create Quarto Project</a></li><li><a href="#tabset-1-4">Projeto Quarto criado</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1">
-<center>
-<div class="quarto-figure quarto-figure-center" style="width: 90%; !important">
-<figure>
-<p><img data-src="img/rstudio-newfile.png" alt="Print screen da IDE RStudio"></p>
-</figure>
-</div>
-</center>
-</div>
-<div id="tabset-1-2">
-<center>
-<div class="quarto-figure quarto-figure-center" style="width: 90%; !important">
-<figure>
-<p><img data-src="img/rstudio-newproject.png" alt="Print screen da IDE RStudio"></p>
-</figure>
-</div>
-</center>
-</div>
-<div id="tabset-1-3">
-<center>
-<div class="quarto-figure quarto-figure-center" style="width: 90%; !important">
-<figure>
-<p><img data-src="img/rstudio-create-quarto-project.png" alt="Print screen da IDE RStudio"></p>
-</figure>
-</div>
-</center>
-</div>
-<div id="tabset-1-4">
-<center>
-<div class="quarto-figure quarto-figure-center" style="width: 90%; !important">
-<figure>
-<p><img data-src="img/rstudio-quarto-project-created.png" alt="Print screen da IDE RStudio"></p>
-</figure>
-</div>
-</center>
-</div>
-</div>
-</div>
+<h2>Current Status of Data Science Education</h2>
 </section>
 <section class="slide level2">
-<h2>Quarto no terminal</h2>
-<p>Você também pode usar o terminal para utilizar o Quarto.</p>
-<div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Ver comandos disponíveis</a></li><li><a href="#tabset-2-2">Criar um projeto</a></li><li><a href="#tabset-2-3">Renderizar</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1">
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">quarto</span> help</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>  Usage:   quarto 
-  Version: 0.9.243
-                  
-
-  Description:
-
-    Quarto CLI
-
-  Options:
-
-    -h, --help     - Show this help.                            
-    -V, --version  - Show the version number for this program.  
-
-  Commands:
-
-    render          [input] [args...]  - Render input file(s) to various document types.                                                
-    serve           [input]            - Serve an interactive document.                                                                 
-    create-project  [dir]              - Create a project for rendering multiple documents                                              
-    preview         [file] [args...]   - Render and preview a Quarto document or website project. Automatically reloads the browser when
-    convert         [input]            - Convert documents to alternate representations.                                                
-    capabilities                       - Query for current capabilities (output formats, engines, kernels etc.)                         
-    check           [target]           - Check and verify correct functioning of Quarto installation and computation engines.           
-    inspect         [path]             - Inspect a Quarto project or input path. Inspecting a project returns its config and engines.   
-    tools           [command] [tool]   - Manage the installation, update, and uninstallation of useful tools.                           
-    help            [command]          - Show this help or the help of a sub-command.    </code></pre>
-</div>
-<div id="tabset-2-2">
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="bu">cd</span> ~/Desktop</span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="ex">quarto</span> create-project exemplo-quarto-project</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>Creating project at /Users/beatrizmilz/Desktop/exemplo-quarto-project:
-  - Created _quarto.yml
-  - Created exemplo-quarto-project.qmd</code></pre>
-</div>
-<div id="tabset-2-3">
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="bu">cd</span> ~/Desktop/exemplo-quarto-project</span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="ex">quarto</span> render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>pandoc 
-  to: html
-  output-file: exemplo-quarto-project.html
-  standalone: true
-  section-divs: true
-  html-math-method: mathjax
-  wrap: none
-  default-image-extension: png
-  filters:
-    - crossref
-  
-metadata
-  document-css: false
-  link-citations: true
-  lang: en
-  title: exemplo-quarto-project</code></pre>
-</div>
-</div>
-</div>
+<h2>Most People Are Missing “Data” Classes</h2>
 </section>
 <section class="slide level2">
-<h2>Quarto no VS Code</h2>
-<div class="panel-tabset">
-<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">TO DO</a></li></ul>
-<div class="tab-content">
-<div id="tabset-3-1">
-<p>TO DO!</p>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2 center">
-<h2>Dicas para acompanhar as novidades</h2>
-<ul>
-<li class="fragment"><p>Atualize o <a href="https://quarto.org/docs/get-started/">Quarto</a> com frequência!</p></li>
-<li class="fragment"><p>Caso você utilize o RStudio, <a href="https://www.rstudio.com/products/rstudio/download/#download">mantenha-o atualizado também</a>.</p></li>
-<li class="fragment"><p>Siga e acompanhe o Twitter: <a href="https://twitter.com/quarto_pub">@quarto_pub</a></p></li>
-<li class="fragment"><p>Acompanhe as <a href="https://github.com/quarto-dev/quarto-cli/discussions">discussions no GitHub</a></p></li>
-</ul>
-</section>
-<section class="slide level2 center">
-<h2>Futurologia</h2>
-<ul>
-<li class="fragment"><p>O plano é lançar o Quarto versão 1.0 na rstudio::conf <a href="https://github.com/quarto-dev/quarto-cli/discussions/463#discussioncomment-2437882">#463</a></p></li>
-<li class="fragment"><p>Edição colaborativa online? <a href="https://github.com/quarto-dev/quarto-cli/discussions/405">#405</a></p></li>
-</ul>
-</section>
-<section class="slide level2 center">
-<h2>Materiais para ir mais longe</h2>
-<p><a href="https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/">Não falamos do Quarto</a> - Post em inglês por <a href="https://www.apreshill.com/">Alison Hill</a></p>
-<p><a href="https://www.youtube.com/watch?v=6p4vOKS6Xls&amp;t=67s">Reproducible Authoring with Quarto</a> - Apresentação em inglês por <a href="https://mine-cr.com/">Mine Çetinkaya-Rundel</a></p>
+<h2>The Data Science Cycle</h2>
+</section></section>
+<section>
+<section class="title-slide slide level1 center">
+<h1>Data Science in the Biomedical Science</h1>
 
-<img data-src="https://media.giphy.com/media/m0sSXPW81xFD77ZQbV/giphy.gif" class="r-stretch"></section>
-<section class="slide level2 center">
-<h2>Obrigada!</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Agradecimentos:</p>
-<ul>
-<li class="fragment"><p>Julio Trecenti</p></li>
-<li class="fragment"><p>Steven Ross</p></li>
-<li class="fragment"><p>Organização do <a href="https://ser.uff.br">VI SER</a></p></li>
-<li class="fragment"><p><a href="https://github.com/quarto-dev/quarto-cli/graphs/contributors">Equipe de desenvolvimento do Quarto</a> e <a href="https://github.com/jjallaire">JJ</a></p></li>
-<li class="fragment"><p><a href="https://mine-cr.com/">Mine Çetinkaya-Rundel</a> e <a href="https://www.apreshill.com/">Alison Hill</a></p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p>Contato:</p>
-<center>
-<p><a href="mailto:milz.bea@gmail.com"><i class="far fa-envelope"></i></a> <a href="https://twitter.com/BeaMilz"><i class="fab fa-twitter"></i> </a><a href="https://github.com/beatrizmilz"><i class="fab fa-github"></i></a> <a href="https://beatrizmilz.github.io/resume/index.pdf"><i class="ai ai-cv"></i></a></p>
-</center>
-<ul>
-<li class="fragment">Dúvidas no <a href="https://discourse.curso-r.com/">Fórum discourse da Curso-R</a></li>
-</ul>
-<center>
-<p><img data-src="https://media.giphy.com/media/iYVneIXJQ3jdJLkZmM/giphy.gif"></p>
-</center>
-</div>
-</div>
+</section>
+<section class="slide level2">
+<h2>Data Science Programs Are Too General</h2>
+</section>
+<section class="slide level2">
+<h2>Informatics Interest Outpace Opportunities</h2>
+</section>
+<section class="slide level2">
+<h2>Excel</h2>
+</section>
+<section class="slide level2">
+<h2>Consequences of Reproducibility Failures</h2>
+</section>
+<section class="slide level2">
+<h2>Successful R-based Test Package Submitted to FDA</h2>
+</section>
+<section class="slide level2">
+<h2>Backward Design Learning Materials</h2>
+<ol type="1">
+<li>Identify your learners (learner persona)</li>
+<li>Plan out your lesson content (concept maps)</li>
+<li>Define overall goal (summative assessment)</li>
+<li>Break down the goal (formative assessment)</li>
+<li>Outline the course</li>
+<li>Write a summary of the course</li>
+</ol>
+</section></section>
+<section>
+<section class="title-slide slide level1 center">
+<h1>Identification of Biomedical Data Science Learner Persons</h1>
+<p>Implications and Lessons Learned for Domain-Specific Data Science Curriculum</p>
+</section>
+<section class="slide level2">
+<h2>What are Personas?</h2>
+</section>
+<section class="slide level2">
+<h2>Why use personas in education?</h2>
+</section>
+<section class="slide level2">
+<h2>Creating a “Wrong” Persona</h2>
+</section>
+<section class="slide level2">
+<h2>Creating Learner Personas</h2>
+</section>
+<section class="slide level2">
+<h2>Ocupation</h2>
+</section>
+<section class="slide level2">
+<h2>General Attitudes: Summary Likert (7)</h2>
+</section>
+<section class="slide level2">
+<h2>Survey Validation: Selecting items for EFA</h2>
+</section>
+<section class="slide level2">
+<h2>Exploratory Factor Analysis</h2>
+</section>
+<section class="slide level2">
+<h2>EFA: Factor Loadings + Cronbah’s alpha</h2>
+</section>
+<section class="slide level2">
+<h2>Hierarchical Clustering for Personas</h2>
+</section>
+<section class="slide level2">
+<h2>Identifying Personas: Programming Experience</h2>
+</section>
+<section class="slide level2">
+<h2>Identifying Personas: Programming for Analysis</h2>
+</section>
+<section class="slide level2">
+<h2>Identifying Personas: Solving technical problems</h2>
+</section>
+<section class="slide level2">
+<h2>Identifying Personas: Statistics</h2>
+</section>
+<section class="slide level2">
+<h2>Identifying Personas: Excel</h2>
+</section>
+<section class="slide level2">
+<h2>Hierarchical Clustering for Personas</h2>
+</section>
+<section class="slide level2">
+<h2>Overall Persona Differences</h2>
+<ol type="1">
+<li>Ash Academic</li>
+<li>Samir Student</li>
+<li>Clare Clinician</li>
+</ol>
+</section>
+<section class="slide level2">
+<h2>Primary Target User</h2>
+</section>
+<section class="slide level2">
+<h2>Biomedical Learner Persona Survey Conclusions</h2>
+</section></section>
+<section>
+<section class="title-slide slide level1 center">
+<h1>Assessing the Efficacy of Domain-Specific Data Science Curriculum in the Biomedical Sciences</h1>
+<p>How Learner Personas Can Guide Educational Needs in the Short-Term and Long-Term</p>
+</section>
+<section class="slide level2">
+<h2>Backward Design</h2>
+<ol type="1">
+<li>Identify your learners (learner persona)</li>
+<li>Plan out your lesson content (concept maps)</li>
+<li>Define overall goal (summative assessment)</li>
+<li>Break down the goal (formative assessment)</li>
+<li>Outline the the course</li>
+<li>Write a summary of the course</li>
+</ol>
+</section>
+<section class="slide level2">
+<h2>Who Are Our Learners?</h2>
+</section>
+<section class="slide level2">
+<h2>Managing Prior Knowledge</h2>
+</section>
+<section class="slide level2">
+<h2>Summative Assessment</h2>
+</section>
+<section class="slide level2">
+<h2>R + Python</h2>
+</section>
+<section class="slide level2">
+<h2>Are the Materials Effective?</h2>
+</section>
+<section class="slide level2">
+<h2>Bloom’s Taxonomy</h2>
+</section>
+<section class="slide level2">
+<h2>Learning Objectives</h2>
+</section>
+<section class="slide level2">
+<h2>Create Data Science Learning Materials</h2>
+</section>
+<section class="slide level2">
+<h2>ds4biomed: https://ds4biomed.tech/</h2>
+</section>
+<section class="slide level2">
+<h2>Workshop Attendees</h2>
+</section>
+<section class="slide level2">
+<h2>Pre-Post Results Overall</h2>
+</section>
+<section class="slide level2">
+<h2>Pre-Post Results Overall</h2>
+</section>
+<section class="slide level2">
+<h2>Post-Long Summative</h2>
+</section>
+<section class="slide level2">
+<h2>Pre-Post-Long Results</h2>
+</section>
+<section class="slide level2">
+<h2>Pre-Post-Long Composite</h2>
+</section>
+<section class="slide level2">
+<h2>Learning Material Effectiveness Conclusions</h2>
+</section></section>
+<section>
+<section class="title-slide slide level1 center">
+<h1>Practical Implications</h1>
+
+</section>
+<section class="slide level2">
+<h2>Overall Conclusions</h2>
+</section>
+<section class="slide level2">
+<h2>Communities (of Practice)</h2>
+</section>
+<section class="slide level2">
+<h2>Teaching Tech Together: The Rules</h2>
 <!-- inicio font awesome -->
 <script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
 <p><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> <!-- final font awesome --></p>
 <div class="footer footer-default">
-<p>Slides por <a href="https://beatrizmilz.com">Beatriz Milz</a>, feitos com <a href="https://quarto.org/docs/presentations/revealjs/index.html">Quarto</a>. Código disponível no <a href="https://github.com/beatrizmilz/2022-SER-quarto">GitHub</a>.</p>
+<p>Slides by: <a href="https://daniel.rbind.io/">Daniel Chen</a>, using <a href="https://quarto.org/docs/presentations/revealjs/index.html">Quarto</a>. <a href="https://github.com/chendaniely/2022-04-21-rladies-YVR">https://github.com/chendaniely/2022-04-21-rladies-YVR</a></p>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -912,48 +757,6 @@ metadata
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          // dispatch for htmlwidgets
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for reveal
-        if (window.Reveal) {
-          window.Reveal.addEventListener("slidechanged", function(event) {
-            fireSlideChanged(event.previousSlide, event.currentSlide);
-          });
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

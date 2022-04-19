@@ -1,360 +1,175 @@
 ---
-title: "Quarto:"
-subtitle: "Conhecendo a evolução do R Markdown"
+title: "Identify and Create Data Science Materials for your Learners"
+subtitle: "R-Ladies Vancouver"
 
-author: "[Beatriz Milz](https://beatrizmilz.com) no [VI SER <br>  International Seminar on Statistics with R](https://ser.uff.br)"
-date: "Maio de 2022"
+author: "[Daniel Chen](https://daniel.rbind.io/)"
+date: "Thursday, April 21, 2022"
 format: 
   revealjs:
-    incremental: true   
-    #logo: "img/logo.png"
-    footer: "Slides por [Beatriz Milz](https://beatrizmilz.com), feitos com [Quarto](https://quarto.org/docs/presentations/revealjs/index.html). Código disponível no [GitHub](https://github.com/beatrizmilz/2022-SER-quarto)."
+    footer: "Slides by: [Daniel Chen](https://daniel.rbind.io/), using [Quarto](https://quarto.org/docs/presentations/revealjs/index.html). [https://github.com/chendaniely/2022-04-21-rladies-YVR](https://github.com/chendaniely/2022-04-21-rladies-YVR)"
     theme: ["custom.scss"]
     slide-number: c/t
     show-slide-number: all
     hash-type: number
 ---
 
-## Beatriz Milz {.center}
+## Daniel Chen {.center}
 
-::: columns
+:::::: columns
 ::: {.column width="40%"}
 <center>
 
-<a href='mailto:milz.bea@gmail.com'><i class="far fa-envelope"></i></a> <a href='https://twitter.com/BeaMilz'><i class="fab fa-twitter"></i> <a href='https://github.com/beatrizmilz'><i class="fab fa-github"></i></a> <a href='https://beatrizmilz.github.io/resume/index.pdf'><i class="ai ai-cv"></i></a>
+<a href='mailto:chendaniely@gmail.com'><i class="far fa-envelope"></i></a>
+<a href='https://twitter.com/chendaniely'><i class="fab fa-twitter"></i>
+<a href='https://github.com/chendaniely'><i class="fab fa-github"></i></a>
 
-<img src="img/foto.jpeg" alt="Beatriz Milz" style="border-radius: 50%;     max-width: 70%;"/>
+<img src="img/foto.jpeg" alt="Daniel Chen" style="border-radius: 50%;     max-width: 70%;"/>
 
 </center>
 :::
 
 ::: {.column width="60%"}
--   Professora na [Curso-R](https://curso-r.com/).
+- Postdoctoral Research and Teaching Fellow, UBC, MDS-Vancouver
 
--   Doutoranda em Ciência Ambiental (PROCAM/IEE/USP)
+- Data Science Educator, RStudio, PBC ([RStudio Academy](https://www.rstudio.com/academy/))
 
--   Co-organizadora da [R-Ladies São Paulo](https://www.meetup.com/pt-BR/R-Ladies-Sao-Paulo) `r emo::ji("purple_heart")`
+- The Carpentries
 
--   [Instrutora de tidyverse certificada pela RStudio](https://education.rstudio.com/trainers/people/milz+beatriz/).
+- Author, [Pandas for Everyone](https://www.pearson.com/us/higher-education/program/Chen-Pandas-for-Everyone-Python-Data-Analysis/PGM335102.html)
 :::
-:::
+::::::
 
-## Sobre essa apresentação {.center}
+## Musqueam {.center}
 
-<center>
+## Tutelo {.center}
 
-![](https://quarto.org/quarto.png){height="100"}
+# Data Science Education
 
-</center>
+## Current Status of Data Science Education
 
--   `r emo::ji("x")` Tutorial sobre o Quarto
+## Most People Are Missing "Data" Classes
 
--   `r emo::ji("white_check_mark")` Minha experiência pessoal
+## The Data Science Cycle
 
--   `r emo::ji("white_check_mark")` Dicas sobre o que eu aprendi até então
+# Data Science in the Biomedical Science
 
-## No começo...
+## Data Science Programs Are Too General
 
-```{r}
-#| fig.align: "center"
-#| out.width: "60%"
-knitr::include_graphics("https://i.giphy.com/media/1i4UsfZhrhKkHagP5g/giphy.webp")
-```
+## Informatics Interest Outpace Opportunities
 
-## R Markdown {.center}
+## Excel
 
--   [Pacote em R](https://rmarkdown.rstudio.com/), para criar documentos reprodutíveis.
+## Consequences of Reproducibility Failures
 
--   Muito usado na comunidade de R.
+## Successful R-based Test Package Submitted to FDA
 
--   Criado e mantido pela [RStudio](https://www.rstudio.com/).
+## Backward Design Learning Materials
 
-## R Markdown {.center}
+1. Identify your learners (learner persona)
+2. Plan out your lesson content (concept maps)
+3. Define overall goal (summative assessment)
+4. Break down the goal (formative assessment)
+5. Outline the course
+6. Write a summary of the course
 
--   Possui extensões que permitem produzir:
-    -   Sites
-    -   Blogs
-    -   Apresentações
-    -   Textos acadêmicos (artigos científicos, relatórios, teses, etc)
-    -   Entre outros!
+# Identification of Biomedical Data Science Learner Persons
 
-## Eu `r emo::ji("purple_heart")` R Markdown {.center}
+Implications and Lessons Learned for Domain-Specific Data Science Curriculum
 
--   Uso desde 2018!
+## What are Personas?
 
--   Várias apresentações sobre R Markdown (especialmente apresentações com xaringan!): <https://beatrizmilz.com/talk/>
+## Why use personas in education?
 
--   Gosto de acompanhar, testar as novidades e assistir palestras!
+## Creating a “Wrong” Persona
 
-##  {.center}
+## Creating Learner Personas
 
-No 3º R Day (setembro/2021), o Yihui Xie (criador do R Markdown) participou e disse:
+## Ocupation
 
-> " The future? We have learned a lot in the last 10 years from those packages in the R Markdown ecosystem. **We are lauching a new, exciting and much bigger project.** Stay tuned."
+## General Attitudes: Summary Likert (7)
 
-Assista a apresentação no [Youtube](https://youtu.be/T24nt-d4cEg?t=2616).
+## Survey Validation: Selecting items for EFA
 
-## ~~Stalkeando~~ Acompanhando {.center}
+## Exploratory Factor Analysis
 
-Encontrei uma nova organização no GitHub: [quarto-dev](https://github.com/quarto-dev)
+## EFA: Factor Loadings + Cronbah’s alpha
 
-Algumas pessoas da RStudio estavam envolvidas no projeto
+## Hierarchical Clustering for Personas
 
-Acompanhei e logo quis testar!
+## Identifying Personas: Programming Experience
 
-<center>
+## Identifying Personas: Programming for Analysis
 
-![](https://media.giphy.com/media/fSCbSLfLmTxEKmlRcy/giphy.gif){width="500" height="250"}
+## Identifying Personas: Solving technical problems
 
-</center>
+## Identifying Personas: Statistics
 
-## Quarto {.center}
+## Identifying Personas: Excel
 
-::: columns
-::: {.column width="45%"}
-```{r}
-#| fig.align: "center"
-#| out.width: "90%"
-knitr::include_graphics("https://media.giphy.com/media/j0eRJzyW7XjMpu1Pqd/giphy.gif")
-```
-:::
+## Hierarchical Clustering for Personas
 
-::: {.column width="50%"}
--   Comecei a usar o Quarto em outubro de 2021
+## Overall Persona Differences
 
--   [Enviei uma sugestão](https://github.com/quarto-dev/quarto-web/issues/38) (outubro/2021)
+1. Ash Academic
+2. Samir Student
+3. Clare Clinician
 
--   [Enviei uma contribuição](https://github.com/quarto-dev/quarto-cli/pull/182) (novembro/2021)
-:::
-:::
+## Primary Target User
 
-## Porque o Quarto existe? {.center}
+## Biomedical Learner Persona Survey Conclusions
 
-TO DO
+# Assessing the Efficacy of Domain-Specific Data Science Curriculum in the Biomedical Sciences
 
-## Quais são as similaridades? {.center}
+How Learner Personas Can Guide Educational Needs in the Short-Term and Long-Term
 
-TO DO!
+## Backward Design
 
-## Quais são as (principais) diferenças? {.center}
+1. Identify your learners (learner persona)
+2. Plan out your lesson content (concept maps)
+3. Define overall goal (summative assessment)
+4. Break down the goal (formative assessment)
+5. Outline the the course
+6. Write a summary of the course
 
-::: columns
-::: {.column width="50%"}
-### R Markdown
+## Who Are Our Learners?
 
-TO DO!
-:::
+## Managing Prior Knowledge
 
-::: {.column width="50%"}
-### Quarto
+## Summative Assessment
 
-TO DO!
-:::
-:::
+## R + Python
 
-## Como começar a usar o quarto {.center}
+## Are the Materials Effective?
 
-[Instalar o Quarto:](https://quarto.org/docs/get-started/)
+## Bloom’s Taxonomy
 
-<br>
+## Learning Objectives
 
-<center>
+## Create Data Science Learning Materials
 
-<a href='https://quarto.org/docs/get-started/'> ![](img/install-quarto.png){style="width: 80%; !important" fig-alt="Print screen da página de instalação do Quarto" fig-align="center"} </a>
+## ds4biomed: https://ds4biomed.tech/
 
-</center>
+## Workshop Attendees
 
-## Como começar a usar o quarto {.center}
+## Pre-Post Results Overall
 
--   Escolha uma IDE. Exemplos que experimentei:
-    -   [RStudio](https://quarto.org/docs/get-started/hello/rstudio.html) - Experimente o [Visual Markdown Editor](https://rstudio.github.io/visual-markdown-editing/)
-    -   [Visual Studio code](https://quarto.org/docs/get-started/hello/vscode.html) - Instale também a [extensão do Quarto para VS Code](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
+## Pre-Post Results Overall
 
-<br>
+## Post-Long Summative
 
-<center>
+## Pre-Post-Long Results
 
-<a href='https://quarto.org/docs/get-started/'> ![](img/step-2.png){style="width: 80%; !important" fig-alt="Print screen da página de instalação do Quarto" fig-align="center"} </a>
+## Pre-Post-Long Composite
 
-</center>
+## Learning Material Effectiveness Conclusions
 
-## Quarto no RStudio
+# Practical Implications
 
-::: panel-tabset
-## New File
+## Overall Conclusions
 
-<center>
+## Communities (of Practice)
 
-![](img/rstudio-newfile.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}
-
-</center>
-
-## New Project
-
-<center>
-
-![](img/rstudio-newproject.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}
-
-</center>
-
-## Create Quarto Project
-
-<center>
-
-![](img/rstudio-create-quarto-project.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}
-
-</center>
-
-## Projeto Quarto criado
-
-<center>
-
-![](img/rstudio-quarto-project-created.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio" fig-align="center"}
-
-</center>
-:::
-
-## Quarto no terminal
-
-Você também pode usar o terminal para utilizar o Quarto.
-
-::: panel-tabset
-## Ver comandos disponíveis
-
-``` bash
-quarto help
-```
-
-      Usage:   quarto 
-      Version: 0.9.243
-                      
-
-      Description:
-
-        Quarto CLI
-
-      Options:
-
-        -h, --help     - Show this help.                            
-        -V, --version  - Show the version number for this program.  
-
-      Commands:
-
-        render          [input] [args...]  - Render input file(s) to various document types.                                                
-        serve           [input]            - Serve an interactive document.                                                                 
-        create-project  [dir]              - Create a project for rendering multiple documents                                              
-        preview         [file] [args...]   - Render and preview a Quarto document or website project. Automatically reloads the browser when
-        convert         [input]            - Convert documents to alternate representations.                                                
-        capabilities                       - Query for current capabilities (output formats, engines, kernels etc.)                         
-        check           [target]           - Check and verify correct functioning of Quarto installation and computation engines.           
-        inspect         [path]             - Inspect a Quarto project or input path. Inspecting a project returns its config and engines.   
-        tools           [command] [tool]   - Manage the installation, update, and uninstallation of useful tools.                           
-        help            [command]          - Show this help or the help of a sub-command.    
-
-## Criar um projeto
-
-``` bash
-cd ~/Desktop
-quarto create-project exemplo-quarto-project
-```
-
-    Creating project at /Users/beatrizmilz/Desktop/exemplo-quarto-project:
-      - Created _quarto.yml
-      - Created exemplo-quarto-project.qmd
-
-## Renderizar
-
-``` bash
-cd ~/Desktop/exemplo-quarto-project
-quarto render
-```
-
-    pandoc 
-      to: html
-      output-file: exemplo-quarto-project.html
-      standalone: true
-      section-divs: true
-      html-math-method: mathjax
-      wrap: none
-      default-image-extension: png
-      filters:
-        - crossref
-      
-    metadata
-      document-css: false
-      link-citations: true
-      lang: en
-      title: exemplo-quarto-project
-:::
-
-## Quarto no VS Code
-
-::: panel-tabset
-## TO DO
-
-TO DO!
-:::
-
-## Dicas para acompanhar as novidades {.center}
-
--   Atualize o [Quarto](https://quarto.org/docs/get-started/) com frequência!
-
--   Caso você utilize o RStudio, [mantenha-o atualizado também](https://www.rstudio.com/products/rstudio/download/#download).
-
--   Siga e acompanhe o Twitter: [\@quarto_pub](https://twitter.com/quarto_pub)
-
--   Acompanhe as [discussions no GitHub](https://github.com/quarto-dev/quarto-cli/discussions)
-
-## Futurologia {.center}
-
--   O plano é lançar o Quarto versão 1.0 na rstudio::conf [#463](https://github.com/quarto-dev/quarto-cli/discussions/463#discussioncomment-2437882)
-
--   Edição colaborativa online?
-    [#405](https://github.com/quarto-dev/quarto-cli/discussions/405)
-
-## Materiais para ir mais longe {.center}
-
-[Não falamos do Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) - Post em inglês por [Alison Hill](https://www.apreshill.com/)
-
-[Reproducible Authoring with Quarto](https://www.youtube.com/watch?v=6p4vOKS6Xls&t=67s) - Apresentação em inglês por [Mine Çetinkaya-Rundel](https://mine-cr.com/)
-
-![](https://media.giphy.com/media/m0sSXPW81xFD77ZQbV/giphy.gif)
-
-## Obrigada! {.center}
-
-::: columns
-::: {.column width="50%"}
-Agradecimentos:
-
--   Julio Trecenti
-
--   Steven Ross
-
--   Organização do [VI SER](https://ser.uff.br)
-
--   [Equipe de desenvolvimento do Quarto](https://github.com/quarto-dev/quarto-cli/graphs/contributors) e [JJ](https://github.com/jjallaire)
-
--   [Mine Çetinkaya-Rundel](https://mine-cr.com/) e [Alison Hill](https://www.apreshill.com/)
-:::
-
-::: {.column width="50%"}
-Contato:
-
-<center>
-
-<a href='mailto:milz.bea@gmail.com'><i class="far fa-envelope"></i></a> <a href='https://twitter.com/BeaMilz'><i class="fab fa-twitter"></i> <a href='https://github.com/beatrizmilz'><i class="fab fa-github"></i></a> <a href='https://beatrizmilz.github.io/resume/index.pdf'><i class="ai ai-cv"></i></a>
-
-</center>
-
--   Dúvidas no [Fórum discourse da Curso-R](https://discourse.curso-r.com/)
-
-<center>
-
-![](https://media.giphy.com/media/iYVneIXJQ3jdJLkZmM/giphy.gif)
-
-</center>
-:::
-:::
+## Teaching Tech Together: The Rules
 
 <!-- inicio font awesome -->
 
