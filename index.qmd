@@ -4,14 +4,40 @@ subtitle: "R-Ladies Vancouver"
 
 author: "[Daniel Chen](https://daniel.rbind.io/)"
 date: "Thursday, April 21, 2022"
-format: 
+format:
   revealjs:
-    footer: "Slides by: [Daniel Chen](https://daniel.rbind.io/), using [Quarto](https://quarto.org/docs/presentations/revealjs/index.html). [https://github.com/chendaniely/2022-04-21-rladies-YVR](https://github.com/chendaniely/2022-04-21-rladies-YVR)"
+    footer: "[Daniel Chen](https://daniel.rbind.io/). With [Quarto](https://quarto.org/docs/presentations/revealjs/index.html). Slides: [https://github.com/chendaniely/2022-04-21-rladies-YVR](https://github.com/chendaniely/2022-04-21-rladies-YVR)"
     theme: ["custom.scss"]
     slide-number: c/t
     show-slide-number: all
     hash-type: number
 ---
+
+<style>
+div.footnote {
+  font-size: 10px;
+}
+</style>
+
+## Musqueam {.center}
+
+<img src="img/intro/musqueam.png" alt="map of native lands in Vancouver, BC, Canada area" />
+
+::: footnote
+
+- https://native-land.ca/
+
+:::
+
+## Tutelo {.center}
+
+<img src="img/intro/tutelo.png" alt="map of native lands in eastern USA with arrow pointed to Blacksburg/Roanoke Virginia area in the Tutelo Tribe" />
+
+::: footnote
+
+- https://native-land.ca/
+
+:::
 
 ## Daniel Chen {.center}
 
@@ -22,6 +48,7 @@ format:
 <a href='mailto:chendaniely@gmail.com'><i class="far fa-envelope"></i></a>
 <a href='https://twitter.com/chendaniely'><i class="fab fa-twitter"></i>
 <a href='https://github.com/chendaniely'><i class="fab fa-github"></i></a>
+@chendaniely
 
 <img src="img/foto.jpeg" alt="Daniel Chen" style="border-radius: 50%;     max-width: 70%;"/>
 
@@ -39,29 +66,114 @@ format:
 :::
 ::::::
 
-## Musqueam {.center}
-
-## Tutelo {.center}
-
 # Data Science Education
 
 ## Current Status of Data Science Education
 
+```{r}
+knitr::include_graphics("./img/010-ds_edu/song-2016-bachelors_masters.png")
+```
+
+::: footnote
+- Song IY, Zhu Y. Big data and data science: what should we teach? Expert Systems. 2016;33(4):364-373. doi:https://doi.org/10.1111/exsy.12130
+:::
+
 ## Most People Are Missing "Data" Classes
 
+```{r}
+knitr::include_graphics("./img/010-ds_edu/kross-2020-dedicated_courses.png")
+```
+
+::: footnote
+- Kross S, Peng RD, Caffo BS, Gooding I, Leek JT. The Democratization of Data Science Education. The American Statistician. 2020;74(1):1-7. doi:10.1080/00031305.2019.1668849
+:::
+
 ## The Data Science Cycle
+
+```{r}
+knitr::include_graphics("./img/010-ds_edu/data_science_cycles.png")
+```
+
+
+::: footnote
+- Bargagliotti A, Franklin C, Arnold P, et al. Pre-K-12 Guidelines for Assessment and Instruction in Statistics Education II (GAISE II): A Framework for Statistics and Data Science Education. American Statistical Association 2020.
+- Chen D. Data science figure. Published online December 2020. https://github.com/chendaniely/data_science-figure
+- D’Ignazio C, Bhargava R. DataBasic: Design Principles, Tools and Activities for Data Literacy Learners. The Journal of Community Informatics. 2016;12(3). doi:10.15353/joci.v12i3.3280
+- Wickham H, Grolemund G. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. O’Reilly Media; 2016. https://r4ds.had.co.nz/
+:::
 
 # Data Science in the Biomedical Science
 
 ## Data Science Programs Are Too General
 
+- Data science programs target **single broad audiences**
+- Opportunity to **branch out** to different disciplines
+- Democratization of data science education enables more **domain specific** learning materials
+
+
 ## Informatics Interest Outpace Opportunities
+
+```{r}
+knitr::include_graphics("./img/020-ds-biomed//banerjee-2015-interest_outpace_opportunities.png")
+```
+
+- Students who are interested in a clinical informatics related career
+- Not aware of training opportunities
+- Need to increase: quantity, quality, and publicity
+
+<span class="small">
+American Medical Association. Accelerating Change in Medical Education. American Medical Association. Accessed February 10, 2021. https://www.ama-assn.org/education/accelerating-change-medical-education<br>
+Banerjee R, George P, Priebe C, Alper E. Medical student awareness of and interest in clinical informatics. Journal of the American Medical Informatics Association. 2015;22(e1):e42-e47. doi:10.1093/jamia/ocu046
+
+
+</span>
+
 
 ## Excel
 
+```{r}
+knitr::include_graphics("./img/020-ds-biomed/excel-problem.png")
+```
+
+<span class="small">
+Lewis D. Autocorrect errors in Excel still creating genomics headache. Nature. Published online August 13, 2021. doi:10.1038/d41586-021-02211-4<br>
+Vincent J. Scientists rename human genes to stop Microsoft Excel from misreading them as dates. The Verge. Published August 6, 2020. Accessed December 8, 2021. https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates
+
+
+</span>
+
+
 ## Consequences of Reproducibility Failures
 
+```{r}
+knitr::include_graphics("./img/020-ds-biomed/ostblom-2021-reproducibility_failures.png")
+```
+
+::: footnote
+- Aboumatar, Hanan and Robert A. Wise (Oct. 2019). “Notice of Retraction. Aboumatar et al. Effect of a Program Combining Transitional Care and Long-Term Self-Management Support on Outcomes of Hospitalized Patients With Chronic Obstructive Pulmonary Disease: A Randomized Clinical Trial. JAMA. 2018;320(22):2335-2343.” In: JAMA 322.14, pp. 1417–1418. issn: 0098-7484. doi: 10.1001/jama.2019.11954
+- Kelion, Leo (Oct. 2020). “Excel: Why Using Microsoft’s Tool Caused Covid-19 Results to Be Lost”. en-GB. In: BBC News.
+- Ostblom J, Timbers T. Opinionated practices for teaching reproducibility: motivation, guided instruction and practice. arXiv:210913656 [cs, stat]. Published online September 17, 2021. Accessed November 30, 2021. http://arxiv.org/abs/2109.13656
+- Wallensteen, Lena et al. (2018). “Retraction notice to" Evaluation of behavioral problems after prenatal dexamethasone treatment in Swedish adolescents at risk of CAH"[Hormones and Behavior 85C (2016) 5-11]”. In: Hormonesand behavior 103, p. 140.
+- Whitehouse, Harvey et al. (July 2021). “Retraction Note: Complex Societies Precede Moralizing Gods throughout World History”. en. In: Nature 595.7866, pp. 320–320. issn: 1476-4687. doi: 10.1038/s41586-021-03656-3.
+- Zeeberg, Barry R et al. (2004). “Mistaken identifiers: gene name errors can be introduced inadvertently when using Excel in bioinformatics”. In: BMC bioinformatics 5.1, pp. 1–6.
+- Ziemann, Mark, Yotam Eren, and Assam El-Osta (2016). “Gene name errors are widespread in the scientific literature”. In: Genome biology 17.1, pp. 1–3
+:::
+
+
 ## Successful R-based Test Package Submitted to FDA
+
+- Nov 22nd, 2021
+- R Consortium R submission Pilot 1 Project
+-R-language based submission package
+    - meet the needs and the expectations of the FDA reviewers
+    - assessing code review
+    - analyses reproducibility.
+
+<span class="small">
+R Consortium. Successful R-based Test Package Submitted to FDA. R Consortium. Published December 8, 2021. Accessed December 8, 2021. https://www.r-consortium.org/blog/2021/12/08/successful-r-based-test-package-submitted-to-fdaRConsortium.<br>
+RConsortium/Submissions-Pilot1-to-Fda. R Consortium; 2021. Accessed December 8, 2021. https://github.com/RConsortium/submissions-pilot1-to-fda
+</span>
+
 
 ## Backward Design Learning Materials
 
@@ -72,21 +184,80 @@ format:
 5. Outline the course
 6. Write a summary of the course
 
+<span class="small">
+Wilson G. Teaching Tech Together: How to Make Your Lessons Work and Build a Teaching Community around Them. Taylor & Francis; 2019. http://teachtogether.tech
+
+</span>
+
 # Identification of Biomedical Data Science Learner Persons
 
 Implications and Lessons Learned for Domain-Specific Data Science Curriculum
 
 ## What are Personas?
 
+- Come from product design
+- Detailed description of an imaginary person
+- Embodies assumptions of the user and product
+- Cannot and should not represent every possible user
+
+<span class="small>
+Pruitt J, Adlin T. The Persona Lifecycle: Keeping People in Mind Throughout Product Design. 1st edition. Morgan Kaufmann; 2006.
+</span>
+
 ## Why use personas in education?
 
-## Creating a “Wrong” Persona
+- Minimize **discrepancies** on how people understand and communicate about users
+- Make implicit assumptions **explicit**
+- Stay focused on the **users** (user centric design)
+
+<span class="small>
+Pruitt J, Adlin T. The Persona Lifecycle: Keeping People in Mind Throughout Product Design. 1st edition. Morgan Kaufmann; 2006.
+</span>
+
+## Creating a "Wrong" Persona
+
+- Still backed by data
+- "Product"is still consistent
+- Personas are a work in progress
+
+<span class="small">
+Pruitt J, Adlin T. The Persona Lifecycle: Keeping People in Mind Throughout Product Design. 1st edition. Morgan Kaufmann; 2006.
+</span>
 
 ## Creating Learner Personas
 
+- Self-assessment survey (33 questions)
+- Clustered to identify personas (23 Questions)
+- 2 Waves (N=67): Summer 2020 (N=51) + Summer 2021
+
+1. Demographics (6)
+1. Programs Used in the Past (1)
+1. Programming Experience (6)
+1. Data Cleaning and Processing Experience (4)
+1. Project and Data Management (2)
+1. Statistics (4)
+1. Workshop Framing and Motivation (3)
+1. Summary Likert (7)
+
+<span class="small">
+Ambrose SA, Bridges MW, DiPietro M, Lovett MC, Norman MK. How Learning Works: Seven Research-Based Principles for Smart Teaching. John Wiley & Sons; 2010.<br />
+Jordan KL, Michonneau F. Analysis of The Carpentries Long-Term Surveys (April 2020). Zenodo; 2020. doi:10.5281/zenodo.3728205.<br />
+Jordan K, Michonneau F, Weaver B. Analysis of Software and Data Carpentry’s Pre- and Post-Workshop Surveys. Zenodo; 2018. doi:10.5281/zenodo.1325464.<br />
+Wilson G. Teaching Tech Together: How to Make Your Lessons Work and Build a Teaching Community around Them. Taylor & Francis; 2019. http://teachtogether.tech
+</span>
+
 ## Ocupation
 
+```{r}
+knitr::include_graphics("./img/030-personas/occupation.png")
+```
+
 ## General Attitudes: Summary Likert (7)
+
+```{r}
+knitr::include_graphics("./img/030-personas/summary_likert_all.png")
+```
+
 
 ## Survey Validation: Selecting items for EFA
 
@@ -170,6 +341,34 @@ How Learner Personas Can Guide Educational Needs in the Short-Term and Long-Term
 ## Communities (of Practice)
 
 ## Teaching Tech Together: The Rules
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+1. Be kind: all else is details.
+2. Remember that you are not your learners…
+3. …that most people would rather fail than change…
+4. …and that ninety percent of magic consists of knowing one extra thing.
+5. Never teach alone.
+
+:::
+
+::: {.column width="50%"}
+
+6. Never hesitate to sacrifice truth for clarity.
+7. Make every mistake a lesson.
+8. Remember that no lesson survives first contact with learners…
+9. …that every lesson is too short for the teacher and too long for the learner…
+10. …and that nobody will be more excited about the lesson than you are.
+
+:::
+
+::::
+
+<span class="small">
+Wilson G. Teaching Tech Together: How to Make Your Lessons Work and Build a Teaching Community around Them. Taylor & Francis; 2019. http://teachtogether.tech
+</span>
 
 <!-- inicio font awesome -->
 
