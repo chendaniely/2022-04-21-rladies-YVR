@@ -6,20 +6,20 @@ author: "[Daniel Chen](https://daniel.rbind.io/)"
 date: "Thursday, April 21, 2022"
 format:
   revealjs:
-    footer: "[Daniel Chen](https://daniel.rbind.io/). With [Quarto](https://quarto.org/docs/presentations/revealjs/index.html). Slides: [https://github.com/chendaniely/2022-04-21-rladies-YVR](https://github.com/chendaniely/2022-04-21-rladies-YVR)"
+    footer: "[Daniel Chen](https://daniel.rbind.io/). @chendaniely. Using [Quarto](https://quarto.org/docs/presentations/revealjs/index.html). Slides: [https://github.com/chendaniely/2022-04-21-rladies-YVR](https://github.com/chendaniely/2022-04-21-rladies-YVR)"
     theme: ["custom.scss"]
     slide-number: c/t
     show-slide-number: all
     hash-type: number
 ---
 
+## Musqueam {.center}
+
 <style>
 div.footnote {
   font-size: 10px;
 }
 </style>
-
-## Musqueam {.center}
 
 <img src="img/intro/musqueam.png" alt="map of native lands in Vancouver, BC, Canada area" />
 
@@ -39,7 +39,11 @@ div.footnote {
 
 :::
 
-## Daniel Chen {.center}
+## Thank You
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m developing a presentation for <a href="https://twitter.com/seruff_?ref_src=twsrc%5Etfw">@seruff_</a> using <a href="https://twitter.com/quarto_pub?ref_src=twsrc%5Etfw">@quarto_pub</a> presentations.<br>I started to implement a similar theme as the xaringan <a href="https://twitter.com/RLadiesGlobal?ref_src=twsrc%5Etfw">@RLadiesGlobal</a> theme made by <a href="https://twitter.com/apreshill?ref_src=twsrc%5Etfw">@apreshill</a> !<br>If anyone wants to help to improve it, It would be awesome 💜 <a href="https://twitter.com/hashtag/rladies?src=hash&amp;ref_src=twsrc%5Etfw">#rladies</a> <a href="https://twitter.com/hashtag/RStats?src=hash&amp;ref_src=twsrc%5Etfw">#RStats</a> <a href="https://t.co/xps1v49Ku4">https://t.co/xps1v49Ku4</a> <a href="https://t.co/sK9d3X3unE">pic.twitter.com/sK9d3X3unE</a></p>&mdash; Beatriz Milz (@BeaMilz) <a href="https://twitter.com/BeaMilz/status/1515327145471578120?ref_src=twsrc%5Etfw">April 16, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+## Daniel Chen, PhD, MPH {.center}
 
 :::::: columns
 ::: {.column width="40%"}
@@ -219,7 +223,7 @@ Implications and Lessons Learned for Domain-Specific Data Science Curriculum
 - Pruitt J, Adlin T. The Persona Lifecycle: Keeping People in Mind Throughout Product Design. 1st edition. Morgan Kaufmann; 2006.
 :::
 
-## Creating Learner Personas
+## Creating Learner Personas {.smaller}
 
 - Self-assessment survey (33 questions)
 - Clustered to identify personas (23 Questions)
@@ -227,12 +231,12 @@ Implications and Lessons Learned for Domain-Specific Data Science Curriculum
 
 1. Demographics (6)
 1. Programs Used in the Past (1)
-1. Programming Experience (6)
-1. Data Cleaning and Processing Experience (4)
-1. Project and Data Management (2)
-1. Statistics (4)
+1. *Programming Experience (6)
+1. *Data Cleaning and Processing Experience (4)
+1. *Project and Data Management (2)
+1. *Statistics (4)
 1. Workshop Framing and Motivation (3)
-1. Summary Likert (7)
+1. *Summary Likert (7)
 
 ::: footnote
 - Ambrose SA, Bridges MW, DiPietro M, Lovett MC, Norman MK. How Learning Works: Seven Research-Based Principles for Smart Teaching. John Wiley & Sons; 2010.<br />
@@ -253,7 +257,7 @@ knitr::include_graphics("./img/030-personas/occupation.png")
 knitr::include_graphics("./img/030-personas/summary_likert_all.png")
 ```
 
-## Survey Validation: Selecting items for EFA
+## Survey Validation: Selecting items for EFA {.smaller}
 
 :::::: columns
 ::: {.column width="40%"}
@@ -276,7 +280,11 @@ knitr::include_graphics("./img/030-personas/efa-selection.png")
 :::
 ::::::
 
-## Exploratory Factor Analysis
+::: footnote
+- Corrplot: https://github.com/chendaniely/dissertation-analysis/blob/master/analysis/020-validation/020-005-fa.Rmd#L143
+:::
+
+## Exploratory Factor Analysis {.smaller}
 
 :::::: columns
 ::: {.column width="40%"}
@@ -297,7 +305,12 @@ knitr::include_graphics("./img/030-personas/efa-elbow.png")
 :::
 ::::::
 
-## EFA: Factor Loadings + Cronbah’s alpha
+::: footnote
+- Using `psych::fa()`: https://github.com/chendaniely/dissertation-analysis/blob/master/analysis/020-validation/020-005-fa.Rmd#L287
+- Using `stats::factanal()`: https://github.com/chendaniely/dissertation-analysis/blob/master/analysis/020-validation/020-005-fa.Rmd#L592
+:::
+
+## EFA: Factor Loadings + Cronbah’s alpha {.smaller}
 
 :::::: columns
 ::: {.column width="40%"}
@@ -319,6 +332,10 @@ knitr::include_graphics("./img/030-personas/efa-loadings.png")
 - Cronbah’s 𝛼, loadings ≥ 0.6 were used
 :::
 ::::::
+
+::: footnote
+- Alpha caluclated using `psych::alpha()`: https://github.com/chendaniely/dissertation-analysis/blob/master/analysis/020-validation/020-010-cronbah.Rmd#L76
+:::
 
 ## Hierarchical Clustering for Personas
 
@@ -372,6 +389,11 @@ knitr::include_graphics("./img/030-personas/dendrogram-3-labeled.png")
 knitr::include_graphics("./img/030-personas/persona-overall.png")
 ```
 
+::: footnote
+- `stats::hclust()` for clustering: https://github.com/chendaniely/dissertation-analysis/blob/master/analysis/030-persona/03-pca_clustering.Rmd#L191
+- `stats:cutree()` for cutting the tree: https://github.com/chendaniely/dissertation-analysis/blob/master/analysis/030-persona/03-pca_clustering.Rmd#L222
+:::
+
 ## Primary Target User
 
 ```{r}
@@ -408,7 +430,7 @@ How Learner Personas Can Guide Educational Needs in the Short-Term and Long-Term
 
 # Creating the Learning Materials
 
-## Who Are Our Learners?
+## Who Are Our Learners? {.smaller}
 
 - What do we know about their prior knowledge?
 
@@ -536,7 +558,7 @@ knitr::include_graphics("./img/040-learning_materials/blooms-willingham.png")
 - Donald Clark Plan B: Bogus pyramids: Learning methods, Maslow and Bloom. Donald Clark Plan B. Published July 13, 2020. Accessed November 17, 2021. https://donaldclarkplanb.blogspot.com/2020/07/bogus-pyramids-learning-methods-maslow.html
 :::
 
-## Learning Objectives
+## Learning Objectives {.smaller}
 
 :::::: columns
 ::: {.column width="50%"}
@@ -714,7 +736,7 @@ Create your own learner personas:
 
 - Pedagogical Content Knowledge: How to teach the content
 
-## Overall Conclusions
+## Overall Conclusions {.smaller}
 
 :::::: columns
 ::: {.column width="40%"}
@@ -723,7 +745,7 @@ Create your own learner personas:
 - Data science have different set of programming skills
 - Long-term learning is more important
 - Formative + summative assessments in long-term learning
-- "1,000 hour rule",  "deliberate practice", "forgetting curve"
+- "10,000 hour rule",  "deliberate practice", "forgetting curve"
 :::
 
 ::: {.column width="60%"}
@@ -734,7 +756,9 @@ knitr::include_graphics("./img/040-learning_materials/pre_post_long-lo_only-comp
 ::::::
 
 ::: footnote
-
+- Malcolm Gladwell: 10,000 Hour Rule
+- László and Klara Polgár: deliberate practice
+- Hermann Ebbinghaus: forgetting curve
 :::
 
 ## Communities (of Practice)
@@ -753,7 +777,7 @@ knitr::include_graphics("./img/040-learning_materials/pre_post_long-lo_only-comp
 - Shrestha N, Barik T, Parnin C. Remote, but Connected: How #TidyTuesday Provides an Online Community of Practice for Data Scientists. Proc ACM Hum-Comput Interact. 2021;5(CSCW1):52:1-52:31. doi:10.1145/3449126
 :::
 
-## Teaching Tech Together: The Rules
+## Teaching Tech Together: The Rules {.smaller}
 
 :::: {.columns}
 
